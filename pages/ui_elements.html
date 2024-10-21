@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ui Elements</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> -->
+    <link rel="stylesheet" href="../style/style2.css">
+</head>
+<body style="background-color: white;">
+    
+    
+    <nav class="navbar navbar-expand-sm navbar-light bg-light  fixed-top">
+        <div class="container-fluid">
+            <!-- navbar logo -->
+            <a class="navbar-link" href="javascript:void(0)">
+                <img src="../images/logo.svg" width="150px" alt="">
+            </a>
+            <!-- toggler icon -->
+            </button>
+            <div class="collapse navbar-collapse mx-5" id="mynavbar" style="margin-left: 20px;">
+                <ul class="navbar-nav me-auto">
+                    <span onclick="toggle()" class="navbar-toggler-icon"></span>
+                </ul>
+                <form class="d-flex mx-5">
+                    <a href="" class="my-auto">
+                    <img src="../images/magnifying-glass.png"  width="25px" height="20px" class="my-auto" alt="">
+                </a>
+                    <input class="form-control me-2" type="text" placeholder="Search" style="border: none;">
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+
+
+
+
+
+
+
+
+
+    
+    <div class="container-fluid" style="background-color: #F5F7FF;">
+        <div class="row">
+            <div class="bg-light px-1 py-4 aside" id="sidebar" style="background-color: #fff;">
+                <a href="../index.html">
+                <button id="nav_btn" class="btn my-1 btnnn1"><img src="../images/menu.png" width="18px" style="margin-top: -5px;" alt=""><span class="mx-3 togle123" id="dash">Dashboard</span></button><br>
+            </a>
+                <a href="../pages/ui_elements.html">
+                    <button id="nav_btn2" class="btn my-1 btnnn2"><img src="../images/layo.webp" width="24 px" style="margin-left: -2px; margin-top: -4px;" alt=" togle123"><span class="mx-3" id="dash2">UI Elements</span></button><br>
+                </a>
+                <a href="../pages/forms.html">
+                    <button id="nav_btn3" class="btn my-1 btnnn2"><img src="../images/column.png" width="20px" style="margin-top: -4px;" alt=""><span class="mx-3 togle123" id="dash3">Form Elements</span></button><br> 
+                </a>
+                
+                    <button id="nav_btn4" class="btn my-1 btnnn2" ><img src="../images/antena.jfif" width="27px" style="margin-top: px;" alt=""><span class="mx-2 togle123" id="dash4">Charts</span></button><br>
+                <a href="../pages/basictable.html">
+                    <button id="nav_btn5" class="btn my-1 btnnn2" ><img src="../grid2.png" width="20px" style="margin-top: -3px;" alt=""><span class="mx-3 togle123" id="dash5">Tables</span></button><br>
+                </a>
+                <button id="nav_btn6" class="btn my-1 btnnn2" ><img src="../images/icon.png" width="20px" style="margin-top: -3px;" alt=""><span class="mx-3 togle123" id="dash6">Icons</span></button><br>
+                <a href="../pages/regis.html">
+                    <button id="nav_btn7" class="btn my-1 btnnn2" > <img src="../images/profile.png" width="20px" style="margin-top: -3px;" alt=""><span class="mx-3 togle123" id="dash7">User Pages</span></button><br>
+                </a>
+                <a href="../pages/error.html">
+                <button id="nav_btn8" class="btn my-1 btnnn2"><img src="../images/ban.png" width="20px" style="margin-top: -3px;" alt=""><span class="mx-3 togle123" id="dash8">Error Pages</span></button><br>
+            </a>
+                <button id="nav_btn9" class="btn my-1 btnnn2"><img src="../images/paper2.jpg" width="20px" style="margin-top: -3px;" alt=""><span class="mx-3 togle123" id="dash9">Documentatsion</span></button><br>
+
+            </div>
+            <div class="mainbar container-fluid " id="mainbar">
+                <br>
+                    <div class="row">
+                        <div class="col m-2" style=" width: 45%; background-color: #fff; border-radius: 15px;">
+                            <div class="p-2">
+                              <p  style="font-weight: 700;">  Headings </p>
+                              <p style="font-weight: 300;">Add tags < h1 > to < h6 > or class .h1 to .h6</p>
+                              <hr>
+                              <h1 style="font-weight: 600;">h1. Heading</h1>
+                              <hr>
+                              <h2 style="font-weight: 500;">h2. Heading</h2>
+                              <hr>
+                              <h3 style="font-weight: 400;">h3. Heading</h3>
+                              <hr>
+                              <h4 style="font-weight: 300;">h4. Heading</h4>
+                              <hr>
+                              <h5 style="font-weight: 200;">h5. Heading</h5>
+                            </div>
+                        </div>
+                        <div class="col m-2" style=" width: 45%; background-color: #fff; border-radius: 15px;">
+                            <div class="p-2">
+                                <p  style="font-weight: 700;"> Headings with secondary text                                </p>
+                                <p style="font-weight: 300;">Add faded secondary text to headings</p>
+                                <hr>
+                                <h1 style="font-weight: 600;">h1. Heading <span style="color: gray;">Secondary text</span></h1>
+                                <hr>
+                                <h2 style="font-weight: 500;">h2. Heading <span style="color: gray;">Secondary text</span></h2>
+                                <hr>
+                                <h3 style="font-weight: 400;">h3. Heading <span style="color: gray;">Secondary text</span></h3>
+                                <hr>
+                                <h4 style="font-weight: 300;">h4. Heading <span style="color: gray;">Secondary text</span></h4>
+                                <hr>
+                                <h5 style="font-weight: 200;">h5. Heading <span style="color: gray;">Secondary text</span></h5>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col my-2 " style=" width: 45%; background-color: #fff; border-radius: 15px;">
+                            <div class="p-2">
+                                <p  style="font-weight: 700;"> Display headings                               </p>
+                                <p style="font-weight: 300;">Add class .display1 to .display-4</p>
+                                <hr>
+                                <h1 style="font-weight: 600;">Display 1</h1>
+                                <hr>
+                                <h2 style="font-weight: 500;">Display 2</h2>
+                                <hr>
+                                <h3 style="font-weight: 400;">Display 3 </h3>
+                                <hr>
+                                <h4 style="font-weight: 300;">Display 4</h4>
+                              </div>
+                        </div>
+                        <div class="col  my-2 mx-4" style="width: 45%; padding: 0px;">
+                            <div class="px-3 py-2" style="background-color: #fff; border-radius: 15px; ">
+                                <p style="font-weight: 700;">Paragraph</p>
+                                <p style="font-weight: 300;">Write text in < p > tag</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley not only five centuries,</p>
+                            </div>
+                            <div class="my-3 px-3 py-3" style="background-color: #fff; border-radius: 15px;">
+                                <p style="font-weight: 700;">Icon size</p>
+                                <p style="font-weight: 400;">Add class .icon-lg, .icon-md, .icon-sm</p>
+                                <div class="row">
+                                    <div class="col-4">icon-lg</div>
+                                    <div class="col-4">icon-md</div>
+                                    <div class="col-4">icon-sm</div>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row" >
+                        <div class="col-6 my-2 px-3 py-3" style="background-color: #fff; border-radius: 15px;">
+                            <h4>Blockquotes</h4>
+                            <p>Wrap content inside< blockquote class="blockquote" >  </p>
+                            <div class="px-3 py-2" style="border: 1px solid;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                            </div>
+<br><br>
+
+                            <div class="px-3 py-2" style="border: 1px solid midnightblue;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Someone famous in Source Title
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col mx-4 my-2 px-3 py-3" style=" border-radius: 15px; width: 45%; background-color: #fff;">
+                            <div class="">
+                                <h4>Address</h4>
+                                <p>Use < address > tag</p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>Skydash inc.</p>
+                                        <p>695 lsom Ave,</p>
+                                        <p>Suite 00</p>
+                                        <p>San Francisco, CA 94107</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>E-mail</p>
+                                        <p>johndoe@example.com</p>
+                                        <p>Web Addres</p>
+                                        <p>www.Skydash.com</p>
+                                    </div>
+                                </div>
+
+
+                                <h4>Lead</h4>
+
+                                <p>Use class .lead</p>
+                                <h5>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.   </h5>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class=" my-3 px-3 py-2" style="background-color: white; border-radius: 15px; width: 100%; margin-left: -10px;">
+                        <p style="font-weight: 700;">Text Colors</p>
+                        <p>Use class .text-primary, .text-secondary etc. for text in theme colors</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="text-primary">.text-primary</p>
+                                <p class="text-success">.text-success</p>
+                                <p class="text-danger">.text-danger</p>
+                                <p class="text-warning">.text-warning</p>
+                                <p>.text-info</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="px-2" style="background-color: black; color: #fff; ">.text-light</p>
+                                <p style="color: lightgray;">.text-secondary</p>
+                                <p style="color: grey;">.text-dark</p>
+                                <p style="color: gray;">.text-muted</p>
+                                <p class="px-2" style="color: lightgray; background-color: black;">.text-white</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row">
+                        <div class="col mx-2 py-3 px-3 bg-white" style=" border-radius: 15px;">
+                            <p class="mx-2" style="font-weight: 700;">Top Aligned Media</p>
+                            <p class="mx-3">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque.</p>
+                        </div>
+                        <div class="col mx-2 py-3 px-3 bg-white" style=" border-radius: 15px;">
+                            <p class="mx-2" style="font-weight: 700;">Top Aligned Media</p>
+                            <p class="mx-3">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque.</p>
+                        </div>
+                        <div class="col mx-2 py-3 px-3 bg-white" style="border-radius: 15px;">
+                            <p class="mx-2" style="font-weight: 700;">Top Aligned Media</p>
+                            <p class="mx-3">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque.</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row m-2">
+                        <div class="row my-2">
+                            <div class="col px-3 py-2 bg-white mx-2" style=" border-radius: 15px;">
+                                <p style="font-weight: 700;">Highlighted Text</p>
+                                <p>Wrap the text in < mark > to highlight text</p>
+                                <p>It is a long <span class="bg-warning" style=" color: white; "> established </span> fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution</p>
+                            </div>
+                            <div class="col px-3 py-2 bg-white mx-2" style=" border-radius: 15px;">
+                                <p style="font-weight: 700;">List Unordered</p>
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>Consectetur adipiscing elit</li>
+                                    <li>Integer molestie lorem at massa</li>
+                                    <li>Facilisis in pretium nisl aliquet</li>
+                                    <li>Nulla volutpat aliquam velit</li>
+                                </ul>
+                            </div>                       
+                         </div>
+                         <div class="row my-2">
+                            <div class="col px-3 py-2 bg-white mx-2" style=" border-radius: 15px;">
+                                <p style="font-weight: 700;">Bold text</p>
+                                <p>Use class <span class="text-danger">.font-weight-bold</span></p>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution</p>
+                            </div>
+                            <div class="col px-3 py-2 bg-white mx-2" style=" border-radius: 15px;">
+                                <p style="font-weight: 700;">List Ordered</p>
+                                <ol>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>Consectetur adipiscing elit</li>
+                                    <li>Integer molestie lorem at massa</li>
+                                    <li>Facilisis in pretium nisl aliquet</li>
+                                    <li>Nulla volutpat aliquam velit</li>
+                                </ol>
+                            </div>                       
+                         </div>
+                         
+
+
+
+
+                         
+                    </div>
+
+                    <div class="row my-2 ">
+                        <div class="col bg-white mx-2 px-3 py-2" style="border-radius: 15px;">
+                            <p style="color: rgb(72, 16, 126); font-weight: 700;">Underline</p>
+                            <p>Wrap in <span class="text-danger">< u ></span> tag for underline</p>
+                            <p style="text-decoration: underline;">lorem ipsum dolor sit amet, consectetur mod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <br>
+                            <p class="text-danger" style=" font-weight: 700;">Lowercase</p>
+                            <p>Use class <span class="text-danger"> .text-lowercase </span></p>
+                            <p>lorem ipsum dolor sit amet, consectetur mod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <br>
+                            <p class="text-warning" style="font-weight: 700;">Uppercase</p>
+                            <p>Use class <span class="text-danger">.text-uppercase</span></p>
+                            <p class="text-uppercase">lorem ipsum dolor sit amet, consectetur mod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+
+
+                        <div class="col bg-white px-3 py-2  mx-2" style="border-radius: 15px;">
+                            <p style="color: rgb(72, 16, 126); font-weight: 700;">Mute</p>
+                            <p>Use class <span class="text-danger"> .text-muted</span></p>
+                            <p>lorem ipsum dolor sit amet, consectetur mod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <br>
+                            <p class="text-success" style="font-weight: 700;">Strike</p>
+                            <p>Wrap content in <span class="text-danger"> < del > </span> tag</p>
+                            <p style="text-decoration:line-through;">lorem ipsum dolor sit amet, consectetur mod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <br>
+                            <p style="font-weight: 700;" class="text-info">Capitalized</p>
+                            <p>Use class <span class="text-danger"> .text-capitalize </span></p>
+                            <p>lorem ipsum dolor sit amet, consectetur mod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div> 
+                     </div>
+
+
+                     <div class="row">
+                        <div class="col px-3 py-2 bg-white my-2 mx-2" style="border-radius: 15px;">
+                            <p style="font-weight: 700;">List with icon</p>
+                            <p>Add class <span class="text-danger"> .list-ticked </span> to <span class="text-danger"> < ul > </span></p>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Consectetur adipiscing elit</li>
+                                <li>Integer molestie lorem at massa</li>
+                                <li>Facilisis in pretium nisl aliquet</li>
+                                <li>Nulla volutpat aliquam velit></li>
+                            </ul>
+                        </div>
+                        <div class="col px-3 py-2 bg-white my-2 mx-2" style="border-radius: 15px;">
+                            <p style="font-weight: 700;">List with icon</p>
+                            <p>Add class <span class="text-danger"> .list-arrow </span> to <span class="text-danger"> < ul > </span></p>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Consectetur adipiscing elit</li>
+                                <li>Integer molestie lorem at massa</li>
+                                <li>Facilisis in pretium nisl aliquet</li>
+                                <li>Nulla volutpat aliquam velit></li>
+                            </ul>
+                        </div>
+                        <div class="col px-3 py-2 bg-white my-2 mx-2" style="border-radius: 15px;">
+                            <p style="font-weight: 700;">List with icon</p>
+                            <p>Add class <span class="text-danger"> .list-star </span> to <span class="text-danger"> < ul > </span></p>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Consectetur adipiscing elit</li>
+                                <li>Integer molestie lorem at massa</li>
+                                <li>Facilisis in pretium nisl aliquet</li>
+                                <li>Nulla volutpat aliquam velit></li>
+                            </ul>
+                        </div>
+                     </div>
+                     <br><br>
+                     <hr>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+    <script src="../script/script.js"></script>
+</body>
+</html>

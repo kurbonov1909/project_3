@@ -1,0 +1,43 @@
+body{
+    background-color: #F5F7FF;
+}
+
+
+
+.aside{
+    width: 12%;
+}
+.clicked{
+    width: 4%;
+    background-color: grey;
+    box-sizing: border-box;
+}
+
+
+.mainbar{
+    width: 85%;
+}
+
+.clicked2{
+    width: 93%;
+}
+
+.dashcl{
+    display: none;
+}
+
+.btnnn1{
+    width: 200px;
+     text-align: left;
+      margin-left: 10px;
+}
+
+.btnnn2{
+    width: 200px;
+     text-align: left;
+      margin-left: 10px;
+}
+
+.nav_btncl{
+    width: 45px;
+}
